@@ -20,6 +20,6 @@ module Register_File(clk,rst,a1,a2,a3,wd3,we3,rd1,rd2);
         begin
             rd1=regfile[a1];
             rd2=regfile[a2];
-            end
+            end 
     end
 endmodule
