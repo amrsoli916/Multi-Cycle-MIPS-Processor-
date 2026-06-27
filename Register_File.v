@@ -5,8 +5,10 @@ module Register_File(clk,rst,a1,a2,a3,wd3,we3,rd1,rd2);
     output reg [31:0]rd1,rd2;
     reg [31:0]regfile[0:31];
     always@(posedge clk) begin
-            if(we3)
+        if(we3)begin
+            if(a3!=0)
             regfile[a3]<=wd3;
+        end
         end
     always @(*) begin
         if(rst)
